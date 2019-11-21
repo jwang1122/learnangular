@@ -12,6 +12,7 @@ ng serve
 
 ```bash
 npm install --save bootstrap@3
+npm install --save @angular/http
 ```
 
 ## Understanding Angular JS
