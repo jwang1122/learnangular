@@ -14,6 +14,25 @@ ng serve
 npm install --save bootstrap@3
 ```
 
+## Understanding Angular JS
+### Start web page
+@src/index.html with place holder   
+```xml
+<app-root></app-root>
+```
+which is defined in 
+@src/app/app.component.ts
+```ts
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+```
+### Main Type Script file
+@src/main.ts
+which defined AppComponent
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
