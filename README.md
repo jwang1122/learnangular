@@ -8,6 +8,12 @@ ng serve
 ```
 [Navigate to localhost:4200](http://localhost:4200)
 
+## Installation of node modules
+
+```bash
+npm install --save bootstrap@3
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
