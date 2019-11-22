@@ -15,6 +15,6 @@ I am Here @ <font size="+1" color="darkblue">Servers.component.html</font>
   <p>No Server was created.</p>
 </ng-template>
 <br>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+
 
