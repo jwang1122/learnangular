@@ -1,5 +1,7 @@
 <hr class="style-four">
 I am Here at <font size="+1" color="dodgerblue">Server.component.html</font>
 <hr>
-<p [ngStyle]="{backgroundColor:getColor()}"> {{ 'Server '}} with ID {{ serverId }} is {{ getServerStatus() }} </p>
+<p
+[ngClass]="{online: serverStatus==='online'}">
+{{ 'Server '}} with ID {{ serverId }} is {{ getServerStatus() }} </p>
 
