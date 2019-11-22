@@ -1,10 +1,13 @@
 I am Here @ <font size="+1" color="darkblue">Servers.component.html</font>
 <hr>
+<label>Server Name</label>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
 <button class="btn btn-primary"
 [disabled]="!allowNewServer"
 (click)="onCreateServer()">Add Server</button>
-<p [innerText]="allowNewServer"></p>
+<p> Allow New Server: <label [innerText]="allowNewServer"></label></p>
 <p>{{ serverCreationStatus }}</p>
+The Server Name: {{ serverName }}
 <br>
 <app-server></app-server>
 <app-server></app-server>
