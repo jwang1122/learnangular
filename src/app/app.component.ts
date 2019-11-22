@@ -10,6 +10,16 @@ import { Component } from '@angular/core';
     }
   `]
 })
+
 export class AppComponent {
   name = 'John';
+  username = '';
+
+  onCleanUsername() {
+    this.username = '';
+  }
+
+  isUsernameEmpty() {
+    return this.username.length == 0;
+  }
 }
