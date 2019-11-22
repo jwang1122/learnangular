@@ -8,9 +8,10 @@ I am Here @ <font size="+1" color="darkblue">Servers.component.html</font>
 [disabled]="!allowNewServer"
 (click)="onCreateServer()">Add Server</button>
 <p> Allow New Server: <label [innerText]="allowNewServer"></label></p>
-<p>{{ serverCreationStatus }}</p>
+<!--<p>{{ serverCreationStatus }}</p> -->
 <!-- The Server Name: {{ serverName }} -->
+<p *ngIf="serverCreated">Server was created, server name is {{serverName}} </p>
 <br>
 <app-server></app-server>
-<app-server></app-server>
+
 
