@@ -1,7 +1,7 @@
 I am Here @ <font size="+1" color="darkblue">Servers.component.html</font>
 <hr>
 <label>Server Name</label>
-<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 <input type="text" class="form-control" [(ngModel)]="serverName">
 
 <button class="btn btn-primary"
@@ -9,7 +9,7 @@ I am Here @ <font size="+1" color="darkblue">Servers.component.html</font>
 (click)="onCreateServer()">Add Server</button>
 <p> Allow New Server: <label [innerText]="allowNewServer"></label></p>
 <p>{{ serverCreationStatus }}</p>
-The Server Name: {{ serverName }}
+<!-- The Server Name: {{ serverName }} -->
 <br>
 <app-server></app-server>
 <app-server></app-server>
