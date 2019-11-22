@@ -14,6 +14,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'John';
   username = '';
+  flag = false;
+  log = [];
 
   onCleanUsername() {
     this.username = '';
@@ -21,5 +23,10 @@ export class AppComponent {
 
   isUsernameEmpty() {
     return this.username.length == 0;
+  }
+
+  toggleFlag() {
+    this.flag = !this.flag;
+    this.log.push(this.log.length + 1);
   }
 }

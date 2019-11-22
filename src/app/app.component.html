@@ -1,8 +1,24 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-
-    <app-servers></app-servers>
+    <h3>Homework 3</h3>
+      <ol>
+        <li>Add a button which says 'Display Details'</li>
+        <li>Add a paragraph with any content of your choice (e.g. 'Secret Password = tuna')</li>
+        <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+        <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
+        <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
+      </ol>
+    <h3>Solution</h3>
+      <button class="btn btn-primary"
+      (click)="toggleFlag()">Display Details</button>
+      <p *ngIf="flag">Secret Password = tuna</p>
+      <div *ngFor="let logItem of log"
+      [ngClass]="{white: logItem >= 5}"
+      [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue': 'transparent'}"
+      > {{ logItem }}
+      </div>
+<!--    <app-servers></app-servers> -->
     </div>
   </div>
 </div>
