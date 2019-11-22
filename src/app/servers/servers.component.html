@@ -1,8 +1,10 @@
 I am Here @ <font size="+1" color="darkblue">Servers.component.html</font>
 <hr>
 <button class="btn btn-primary"
-[disabled]="!allowNewServer">Add Server</button>
+[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
 <p [innerText]="allowNewServer"></p>
+<p>{{ serverCreationStatus }}</p>
 <br>
 <app-server></app-server>
 <app-server></app-server>
